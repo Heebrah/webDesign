@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Alfa+Slab+One&family=Luckiest+Guy&family=Roboto+Flex:opsz,wght@8..144,600;8..144,900&family=Rowdies&display=swap" rel="stylesheet">
+    <style>
+        body{
+            color: white;
+            display: flex;
+            justify-content: center;
+        
+        }
+        .container{
+            width: 750px;
+            height: 500px;
+            border: none;
+           
+       
+            
+        }
+        .top-div{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 10px;
+            width: 750px;
+            height: 250px;
+          
+         
+        }
+        .side1, .side2{
+            margin-top: 20px;
+            height: 180px;
+            z-index: 2;
+
+        }
+        .images{
+            border-radius: 15px;
+        }
+        small{
+            font-size: 14px;
+        }
+       
+        .side1, .side2{
+            position: relative;
+            border-radius: 6px;
+        }
+      
+        .side1 .content{
+            position: absolute;
+            top: -20px;
+            left: 10px;
+        }
+        span{
+            position: absolute;
+            color: green;
+            top: 135px;
+            left: 25px;
+            font-size: larger;
+            font-weight:bolder;
+            z-index: 1;
+            
+        }
+        .small{
+            position: absolute;
+            color: #000;
+            font-size: 14px;
+            font-weight: bold;
+            top: 160px;
+            left: 20px;
+        }
+        
+        .content2{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        h1{
+            font-family:'agbalumo'
+        }
+        img{
+            background: transparent;
+            width: 100%;
+            height: 100%;
+        }
+        .circle{
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: yellow;
+            top: 150px;
+            left: 10px;
+            padding: 5px;
+            border-radius: 50%;
+            
+        }
+        .down-div{
+            background-color: rgb(243, 17, 17);
+            display: flex;
+            justify-content: space-between;
+        
+            width: 750px;
+            border-radius: 15px;
+            height: 200px;
+            align-items: center;
+            padding-bottom: 10px;
+        }
+        .reserve{
+            margin-left: 40px;
+            width: 250px;
+            line-height: 10px;
+        }
+    
+        .form{
+          
+          flex: 1;
+          
+        }
+      
+        .last{
+            height: 30px;
+            width: 100px;
+            border: 1px yellow solid;
+            position: relative;
+            margin-left: 270px;
+            margin-top: 10px;
+            border-radius: 4px;
+           
+        }
+        button{
+            height: 26px;
+            width: 109px;
+            background-color: yellow;
+            font-size: 12px;
+            position: absolute;
+            right: 3px;
+            top: 2px;
+            padding-left: 2px;
+            border-radius: 4px;
+            border: none;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: 700;
+        }
+       
+        button:active{
+            background: wheat;
+        }
+        span{
+            display: block;
+            font-weight: 900;
+            margin-top: 25px;
+        }
+        input{
+            width: 180px;
+            margin: 0px;
+            height: 25px;
+            border-radius: 4px;
+            border: none;
+           margin-bottom: 8px;
+           margin-right: 5px;
+        }
+        input::placeholder{
+            font-size: 10px;
+            padding-left: 5px;
+        }
+        .date{
+            width: 85px;
+            font-size: 10px;
+        }
+      
+      .caonical{
+      position: absolute;
+      top: 70px;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-div">
+            <div class="side1">
+                <img class="images" src="images-steak.jpg" alt="">
+            <div class="content"><h1>Steak & BBQ</h1><small class="caonical">caonical Classics to obscure</small><span>$120</span><span class="small">per price</span>
+                <div class="circle"></div>
+            </div>
+        </div>
+          
+        <div class="side1">
+            <img class="images" src="images-cocktail.jpg" alt="">
+        <div class="content"><h1>Cocktail</h1><small class="caonical">caonical Classics to obscure</small></h1><span>$120</span><span class="small">per price</span>
+            <div class="circle"></div>
+        </div>
+    </div>
+        </div>
+        <div class="down-div">
+            <div class="reserve"><h1>RESERVE</h1><h1><u>A TABLE</u></h1><h4>Discover our new world</h4></div>
+            <div class="form"><input type="text" placeholder="Complete Name" id="">
+                <input type="text" placeholder="Email Address" id=""><br>
+                <input type="text" placeholder="No of Guest" id="">
+                <input type="date" class="date" id="">
+                <input type="time" class="date" id="">
+
+                <div class="last"><button class="inner">Reserve A Table</button></div>
+            
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>

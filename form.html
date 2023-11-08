@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" class="input">
+        <input type="submit">
+    </form>
+</body>
+<script>
+    document.querySelector('form').onsubmit = ()=>{
+       let name = document.querySelector('.input').value;
+       prompt(`Are you sure you are ${name}: a. yes, b. no` );
+    }
+</script>
+</html>
